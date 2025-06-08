@@ -1,3 +1,8 @@
+from utils.default_logger import Logger
+
+logger = Logger.get_logger("check")
+logger.info("check")
+
 class Vehicle:
     def __init__(self, make, model):
         self.make = make

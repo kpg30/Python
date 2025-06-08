@@ -1,17 +1,17 @@
 from datetime import datetime
 from typing import List, Dict, Optional
 import logging
-from service2.default_logger import Logger
+#from utils.loggers.default_logger import Logger
 
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s %(levelname)s %(name)s: %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S'
 )
+logger = logging.getLogger(__name__)
 
-logger = Logger.get_logger('classes8')
-#logger = logging.getLogger(__name__)
-#logger = logging.getLogger("classes1")
+# logger = Logger.get_logger('classes1')
+# logger = Logger.get_logger(__name__)
 logger.info('######## Class example')
 
 
