@@ -85,7 +85,7 @@ def main():
         firstname="prasad",
         lastname="k",
         phone=None,
-        dob="xxxx-xx-xx",
+        dob="2020-11-26",
         email="pxxxxxk@example.com",
         location="toronto",
         curr_sal=2000,
