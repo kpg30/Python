@@ -1,6 +1,6 @@
 from datetime import datetime
 from typing import List, Dict, Optional
-from default_logger import Logger
+from loggers.default_logger import Logger
 
 logger = Logger.get_logger('classes1')
 logger = Logger.get_logger(__name__)

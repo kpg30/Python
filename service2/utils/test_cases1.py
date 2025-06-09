@@ -1,5 +1,8 @@
 from datetime import timedelta, date
 from typing import Any, Dict
+from loggers.default_logger import Logger
+
+logger = Logger.get_logger("test_cases1")
 
 class TestCases1:
     
@@ -26,24 +29,24 @@ class TestCases1:
     
 def main():
     
-    print(date.today())
+    logger.info(date.today())
     n = 14
     find_day= TestCases1.find_days(n)
-    print(find_day)
+    logger.info(find_day)
     
     n = 14
     find_day= TestCases1.add_days(n)
-    print(find_day)
+    logger.info(find_day)
     
     name = 'a'
     count = 5
     string_n_times = TestCases1.string_n_times(name, count)
-    print(string_n_times)
+    logger.info(string_n_times)
     
     keys = ['a','b','c']
     values = ['1','2','3']
     to_dict = TestCases1.to_dict(keys, values)
-    print(to_dict)
+    logger.info(to_dict)
        
 if __name__ == '__main__':
     main()
