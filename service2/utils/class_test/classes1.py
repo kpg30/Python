@@ -85,8 +85,8 @@ def main():
         firstname="prasad",
         lastname="k",
         phone=None,
-        dob="1993-11-26",
-        email="prasadk@example.com",
+        dob="xxxx-xx-xx",
+        email="pxxxxxk@example.com",
         location="toronto",
         curr_sal=2000,
         expect_sal=00000,
@@ -98,7 +98,7 @@ def main():
     logger.info('\n')
 
     # Updating info
-    profile.update_email("prasad.k@newmail.com")
+    profile.update_email("pxxxxx.k@newmail.com")
     profile.update_phone("987-654-3210")
     profile.add_skill("Machine Learning")
     profile.add_skill("Python")  # Already exists
