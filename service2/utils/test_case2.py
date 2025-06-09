@@ -9,7 +9,8 @@ class Robot:
         self.color = ""
         self.weight = ""
     
-    def is_introduce1(self, name, color, weight):
+    @staticmethod
+    def is_introduce1( name, color, weight):
         logger.info(f"Name is : {name}")
         logger.info(f"Color is : {color}")
         logger.info(f"Weight is : {weight}")
