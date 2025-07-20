@@ -7,14 +7,14 @@ def get_mysql_conn(database: str):
             conn = mysql.connector.connect(
                 host="localhost",  # Replace with your host
                 user="root",       # Replace with your MySQL username
-                password="Kpg@1993",  # Replace with your MySQL password
+                password="xxxxxxxx",  # Replace with your MySQL password
                 database=database  # Replace with your database name
             )
         else:
             conn = mysql.connector.connect(
                 host="localhost",  # Replace with your host
                 user="root",       # Replace with your MySQL username
-                password="Kpg@1993",  # Replace with your MySQL password
+                password="xxxxxxx",  # Replace with your MySQL password
                 database="default_db"  # Replace with your database name
             )
         
