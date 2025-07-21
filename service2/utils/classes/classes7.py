@@ -1,5 +1,5 @@
 import logging
-from python.service2.utils.class_test.classes6 import *
+from python.service2.utils.classes.classes6 import *
 from python.service2.utils.default_logger import get_logger
  
 # def main():
