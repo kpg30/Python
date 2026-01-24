@@ -1,6 +1,6 @@
 
 from classes6 import *
-from loggers import Logger
+from default_logger.loggers import Logger
 
 logger=Logger.get_logger(__name__)
 

@@ -1,6 +1,18 @@
-# from default_logger import Logger
-from default_logger.loggers import Logger
-logger = Logger.get_logger(__name__)
+
+#############################################
+# defination : A tuple is an immutable ordered collection of items in Python.
+# when to use : Use tuples when you want to store a collection of items that should not change throughout the program.
+# common methods : count(), index()
+# examplin each method :
+#   count(): Returns the number of occurrences of a specified item in the tuple.
+#   index(): Returns the index of the first occurrence of a specified item in the tuple.
+
+#############################################
+import logging
+formatter = '%(asctime)s - %(filename)s - %(levelname)s,line%(lineno)d: %(message)s'
+datefmt = '%Y-%m-%d %H:%M:%S'
+logging.basicConfig(level=logging.INFO, format=formatter, datefmt=datefmt)
+logger = logging.getLogger(__name__)
 
 def demonstrate_tuple_operations():
     try:
