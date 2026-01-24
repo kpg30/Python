@@ -1,11 +1,13 @@
-from python.service2.utils.default_logger import get_logger
+from service2.utils.default_logger import get_logger
 import unittest
 import logging
 
-logger = get_logger('classes8')
+
 level=logging.INFO,
 format='%(asctime)s %(levelname)s %(name)s: %(message)s',
 datefmt='%Y-%m-%d %H:%M:%S'
+logger = get_logger(__name__)
+
 class ProcessUtils(unittest.TestCase):
     logger.info("test python code")
         
