@@ -1,11 +1,11 @@
-# ...existing code...
+
 import getpass
 import logging
 from psql_conn import get_psql_connection
 from encryption import encrypt_password
 
 #######################################################
-# Logging Configuration
+
 format = '%(asctime)s - %(filename)s - %(levelname)s,line%(lineno)d - %(message)s'
 datefmt = '%Y-%m-%d %H:%M:%S'
 logging.basicConfig(level=logging.INFO, format=format, datefmt=datefmt)
